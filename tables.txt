@@ -1,0 +1,40 @@
+The dataset contains the following tables:
+
+watchedVideo: This contains all occurrences of the watchedVideo event.
+
+coordinates: the location where the event occurred
+os: the operating system of the phone the video was played on
+duration: the duration the user watched the video for
+videoId: the watched video_id
+userId: the watchers user_id
+appVersion: the app version the video was played on
+dateTime: the time the event occurred in UTC
+feedId: the feed the video was served on
+
+
+users: This table contains the registered users
+
+id: The users unique id
+created_at: the datetime the user was created in UTC
+class: The class this user has been classified as
+coordinates: the coordinates where the user was located at time of registration
+
+
+videos: This table contains all created videos
+
+id: The videos unique id
+attribute_id: An attribute associated with the video
+music_id: A background music id for this video
+animation_id: The animation id associated to the video
+duration: Duration of the created video
+creator: The creators user id
+created_at: Time of creation of this video in UTC
+num_shares: Number of times this video was shared
+game_id: The games id associated to the video
+is_ar: A flag indicating whether this video was recorded using AR or not
+
+
+feeds: This contains the feeds the videos are served on
+
+id: The feeds unique id
+name: Name of the feed
